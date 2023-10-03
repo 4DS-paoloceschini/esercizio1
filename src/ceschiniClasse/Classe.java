@@ -37,7 +37,6 @@ public class Classe {
         for (i = 0; i< studenti.length; i++){
             for (j = 0;j< studenti.length; j++){
                 if (studenti[i].getCognome()==studenti[j].getCognome() && studenti[i].getNome()==studenti[j].getNome()){
-                    throw Exception();
                 }
             }
         }

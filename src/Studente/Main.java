@@ -59,5 +59,6 @@ public class Main {
 
         classe1.invertiAttributi();
         System.out.println("\nLa classe sistemata e con nomi e cognomi invertitie`: " + classe1.toString());
+
     }
 }

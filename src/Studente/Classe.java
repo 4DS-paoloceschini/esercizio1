@@ -13,15 +13,16 @@ public class Classe {
         studenti = new Studente[stud.length];
         for(int i = 0; i < stud.length; i++){
             if(stud[i].getNome().length() >= 3 && stud[i].getCognome().length() >= 3){
-                if(!stud[i].getNome().contains("/") && !stud[i].getNome().contains("#") && !stud[i].getNome().contains(" ") && !stud[i].getCognome().contains("/") && !stud[i].getCognome().contains("#") && !stud[i].getCognome().contains(" ")){
+                if(stud[i].getNome().contains("/") && stud[i].getNome().contains("#") && stud[i].getNome().contains(" ") && stud[i].getCognome().contains("/") && stud[i].getCognome().contains("#") && stud[i].getCognome().contains(" ")){
+                    throw new Exception(" Sia il nome che il cognome non possono contenere questi caratteri '/' '*' '(spazio)'!");
+
+                }
+                else{
                     stud[i].setNome(stud[i].getNome().substring(0,1).toUpperCase() + stud[i].getNome().substring(1));
                     stud[i].setCognome(stud[i].getCognome().substring(0,1).toUpperCase() + stud[i].getCognome().substring(1));
 
                     studenti[i] = new Studente(stud[i]);
-                }
-                else{
-                    throw new Exception(" Sia il nome che il cognome non possono contenere questi caratteri '/' '*' '(spazio)'!");
-                }
+                    }
 
             }
             else{

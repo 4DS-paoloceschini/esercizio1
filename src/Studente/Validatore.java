@@ -8,7 +8,7 @@ public class Validatore {
         // Esempi di dati da validare
         String email = "utente@example.com";
         String password = "Password123";
-        String targaAuto = "AB123CD";
+        String targaAuto = "BO000RM";
         String cap = "12345";
         String indirizzoIP = "192.168.1.1";
         String url = "https://www.example.com";

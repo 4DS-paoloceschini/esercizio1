@@ -35,8 +35,8 @@ class Segmento {
     }
 
     public void traslaSegmento(float tX, float tY){
-        p1.traslaPunto(tX, tY);
-        p2.traslaPunto(tX, tY);
+        p1.trasla(tX, tY);
+        p2.trasla(tX, tY);
     }
 
     @Override

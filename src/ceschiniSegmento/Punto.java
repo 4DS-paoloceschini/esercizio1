@@ -28,7 +28,7 @@ class Punto{
         y = newY;
     }
 
-    public void traslaPunto(float tX, float tY){
+    public void trasla(double tX, double tY){
         this.x += tX;
         this.y += tY;
     }

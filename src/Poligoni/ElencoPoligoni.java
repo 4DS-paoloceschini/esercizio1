@@ -8,6 +8,7 @@ class ElencoPoligoni {
     }
     public void aggiungiPoligono(PoligoniRegolari p) {
         poligoni[dimLog] = new PoligoniRegolari(p) {
+            @Override
             public double calcolaArea() {
                 return 0;
             }
@@ -17,7 +18,7 @@ class ElencoPoligoni {
     public double calcolaAreaMedia() {
         double sommaAree = 0.0;
         for (int i = 0; i < dimLog; i++) {
-            sommaAree += poligoni[i].getArea();
+            sommaAree += poligoni[i].calcolaArea();
         }
         return sommaAree / dimLog;
     }

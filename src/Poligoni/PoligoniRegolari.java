@@ -4,7 +4,13 @@ class PoligoniRegolari {
     protected double lato;
     protected int numeroLati;
     double area;
-    public PoligoniRegolari(double lato, int numeroLati) {
+    public PoligoniRegolari(double lato, int numeroLati) throws Exception{
+        if (lato<=0){
+            throw new Exception("IL LATO NON PUO' ESSERE UGUALE  MINORE A 0!");
+        }
+        if (numeroLati<4 || numeroLati>6){
+            throw new Exception("NESSUNO DEI POLIGONI DISPONIBILI HA "+numeroLati+" LATI!");
+        }
         this.lato = lato;
         this.numeroLati = numeroLati;
         area = 0.0;

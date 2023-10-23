@@ -1,7 +1,7 @@
 package Poligoni;
 
 class Quadrato extends PoligoniRegolari {
-    public Quadrato(double lato) {
+    public Quadrato(double lato) throws Exception {
         super(lato, 4);
         this.lato = lato;
     }

@@ -1,7 +1,7 @@
 package Poligoni;
 
 class Esagono extends PoligoniRegolari {
-    public Esagono(double lato) {
+    public Esagono(double lato) throws Exception {
         super(lato, 6);
         this.lato = lato;
     }

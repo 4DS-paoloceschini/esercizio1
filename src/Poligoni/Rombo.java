@@ -1,6 +1,6 @@
 package Poligoni;
 
-class Rombo extends PoligoniRegolari {
+public class Rombo extends PoligoniRegolari {
     private double diagonaleMaggiore;
     private double diagonaleMinore;
 

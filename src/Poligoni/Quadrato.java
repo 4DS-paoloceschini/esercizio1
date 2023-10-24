@@ -1,6 +1,6 @@
 package Poligoni;
 
-class Quadrato extends PoligoniRegolari {
+public class Quadrato extends PoligoniRegolari {
     public Quadrato(double lato) throws Exception {
         super(lato, 4);
         this.lato = lato;
@@ -19,4 +19,5 @@ class Quadrato extends PoligoniRegolari {
     public String toString() {
         return super.toString()+"\n Perimetro: "+calcolaPerimetro()+", Area: "+calcolaArea()+", Apotema: "+calcolaApotema()+", Diagonale: "+calcolaDiagonale();
     }
+
 }

@@ -1,7 +1,7 @@
 package Poligoni;
 
-class Pentagono extends PoligoniRegolari {
-    public Pentagono(double lato) {
+public class Pentagono extends PoligoniRegolari {
+    public Pentagono(double lato) throws Exception {
         super(lato, 5);
         this.lato = lato;
     }

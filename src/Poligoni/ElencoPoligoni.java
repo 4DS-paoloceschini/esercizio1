@@ -1,6 +1,6 @@
 package Poligoni;
 
-class ElencoPoligoni {
+public class ElencoPoligoni {
     private PoligoniRegolari[] poligoni;
     int dimLog = 0;
     public ElencoPoligoni(int nPoligoni) {

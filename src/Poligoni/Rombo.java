@@ -1,10 +1,10 @@
 package Poligoni;
 
-class Rombo extends PoligoniRegolari {
+public class Rombo extends PoligoniRegolari {
     private double diagonaleMaggiore;
     private double diagonaleMinore;
 
-    public Rombo(double lato, double diagonaleMaggiore, double diagonaleMinore) {
+    public Rombo(double lato, double diagonaleMaggiore, double diagonaleMinore) throws Exception {
         super(lato, 4);
         this.diagonaleMaggiore = diagonaleMaggiore;
         this.diagonaleMinore = diagonaleMinore;

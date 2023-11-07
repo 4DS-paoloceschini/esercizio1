@@ -15,6 +15,22 @@ class Quadrato extends PoligoniRegolari {
         return lato / 2;
     }
 
+    public String disegna() {
+        String result = "";
+        for (int riga = 1; riga <= lato; riga++) {
+            for (int colonna = 1; colonna <= lato; colonna++) {
+                if (riga == 1 || riga == lato || colonna == 1 || colonna == lato) {
+                    result += "#";
+                } else {
+                    result += " ";
+                }
+            }
+            result += "\n";
+        }
+        return result;
+    }
+
+
     @Override
     public String toString() {
         return super.toString()+"\n Perimetro: "+calcolaPerimetro()+", Area: "+calcolaArea()+", Apotema: "+calcolaApotema()+", Diagonale: "+calcolaDiagonale();

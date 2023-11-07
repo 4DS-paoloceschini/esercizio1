@@ -1,6 +1,6 @@
 package Poligoni;
 
-class PoligoniRegolari {
+abstract class PoligoniRegolari {
     protected double lato;
     protected int numeroLati;
     double area;
@@ -29,9 +29,7 @@ class PoligoniRegolari {
         return lato * numeroLati;
     }
 
-    public double calcolaArea() {
-        return 0;
-    }
+    public abstract double calcolaArea();
 
     public String toString() {
         return "Poligono Regolare con " + numeroLati + " lati";

@@ -7,12 +7,7 @@ public class ElencoPoligoni {
         poligoni = new PoligoniRegolari[nPoligoni];
     }
     public void aggiungiPoligono(PoligoniRegolari p) {
-        poligoni[dimLog] = new PoligoniRegolari(p) {
-            @Override
-            public double calcolaArea() {
-                return 0;
-            }
-        };
+        poligoni[dimLog] = new PoligoniRegolari(p);
         dimLog++;
     }
     public double calcolaAreaMedia() {

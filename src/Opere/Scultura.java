@@ -1,15 +1,24 @@
 package Opere;
 
 public class Scultura extends OperaDArte{
-    private double altezza;
-    private double lunghezza;
-    private double profondita;
+    protected double altezza;
+    protected double lunghezza;
+    protected double profondita;
 
-    public Scultura(String nome, String cognome, String titolo, double altezza, double lunghezza, double profondita) {
+    public Scultura(String nome, String cognome, String titolo, double altezza, double lunghezza, double profondita, Supporto s1){
         super(nome, cognome, titolo);
-        setAltezza(altezza);
-        setLunghezza(lunghezza);
-        setProfondita(profondita);
+        boolean ver = s1.compatibile();{
+            if (!(s1.getLarghezza() == profondita && s1.getAltezza() == altezza && s1.getLunghezza() == lunghezza)){
+                System.out.println("Supporto non compatibile!");
+            }
+        }
+        if (ver){
+            setAltezza(altezza);
+            setLunghezza(lunghezza);
+            setProfondita(profondita);
+        }
+
+
     }
 
     public double getAltezza() {
@@ -45,7 +54,6 @@ public class Scultura extends OperaDArte{
         return "Scultura{" +
                 "altezza=" + altezza +
                 ", lunghezza=" + lunghezza +
-                ", profondita=" + profondita + " Ingombro= "+ printingombro()+"m3" +" "+ super.toString()+ '\'' +
-                '}';
+                ", profondita=" + profondita + " Ingombro= "+ printingombro()+"m3" +" "+ super.toString();
     }
 }

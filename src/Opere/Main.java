@@ -7,18 +7,24 @@ public class Main{
         Scanner input = new Scanner(System.in);
 
         Quadro q = null;
-        Scultura s = null;
+        SculturaDeperibile s = null;
         Scultura s1 = null;
 
         Collezione c = new Collezione(2);
 
         boolean ver = true;
         try {
+            Supporto sup = new Supporto(0.5, 2,3) {
+            @Override
+            public boolean compatibile() {
+                return false;
+            }
+        };
 
             q = new Quadro("pietro", "fABBRI","Pezzo di cuore", 1.5, 2);
             c.aggiungiOpera(q);
 
-            s = new Scultura("FRANCO", "aRmaNI","Abaco",15, 20, 12);
+            s = new SculturaDeperibile("FRANCO", "aRmaNI","Abaco",1, 1, 1, sup,  "sabbia", 0.1);
             c.aggiungiOpera(s);
 
             System.out.println("\nQuadro: " + q.toString());
@@ -27,9 +33,6 @@ public class Main{
             System.out.println("\nColleazione: "+c.toString());
 
 
-            s1 = new Scultura("FRANCa", "aRmaNI","Abaco",15, 20, 12);
-
-            System.out.println("\nDati dell'opera cercata: "+c.cercaOpera(s1));
 
             ver = true;
         } catch (Exception e) {

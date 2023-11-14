@@ -5,8 +5,8 @@ public class Scultura extends OperaDArte{
     private double lunghezza;
     private double profondita;
 
-    public Scultura(String nome, String cognome, double altezza, double lunghezza, double profondita) {
-        super(nome, cognome);
+    public Scultura(String nome, String cognome, String titolo, double altezza, double lunghezza, double profondita) {
+        super(nome, cognome, titolo);
         setAltezza(altezza);
         setLunghezza(lunghezza);
         setProfondita(profondita);

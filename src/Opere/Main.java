@@ -16,10 +16,10 @@ public class Main{
         do {
             try {
 
-                q = new Quadro("pietro", "fABBRI", 1.5, 2);
+                q = new Quadro("pietro", "fABBRI","Pezzo di cuore", 1.5, 2);
                 c.aggiungiOpera(q);
 
-                s = new Scultura("FRANCO", "aRmaNI", 15, 20, 12);
+                s = new Scultura("FRANCO", "aRmaNI","Abaco",15, 20, 12);
                 c.aggiungiOpera(s);
 
                 System.out.println("\nQuadro: " + q.toString());
@@ -28,7 +28,7 @@ public class Main{
                 System.out.println("\nColleazione: "+c.toString());
 
 
-                System.out.println("\nDati dell'opera cercata: "+c.cercaOpera(s));
+                System.out.println("\nDati dell'opera cercata: "+c.cercaOpera(s.getTitolo()));
 
                 ver = true;
             } catch (Exception e) {

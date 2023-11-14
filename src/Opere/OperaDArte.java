@@ -3,11 +3,20 @@ package Opere;
 public abstract class OperaDArte {
     protected String nome;
     protected String cognome;
+    protected String titolo;
 
-    public OperaDArte(String nome, String cognome){
+    public OperaDArte(String nome, String cognome, String titolo){
         setNome(nome);
         setCognome(cognome);
 
+    }
+
+    public String getTitolo() {
+        return titolo;
+    }
+
+    public void setTitolo(String titolo) {
+        this.titolo = titolo;
     }
 
     public String getNome() {

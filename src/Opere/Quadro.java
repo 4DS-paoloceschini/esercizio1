@@ -4,8 +4,8 @@ public class Quadro extends OperaDArte{
     private double altezza;
     private double lunghezza;
 
-    public Quadro(String nome, String cognome, double altezza, double lunghezza) {
-        super(nome, cognome);
+    public Quadro(String nome, String cognome, String titolo, double altezza, double lunghezza) {
+        super(nome, cognome, titolo);
         setAltezza(altezza);
         setLunghezza(lunghezza);
     }

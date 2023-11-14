@@ -13,29 +13,29 @@ public class Main{
         Collezione c = new Collezione(2);
 
         boolean ver = true;
-        do {
-            try {
+        try {
 
-                q = new Quadro("pietro", "fABBRI","Pezzo di cuore", 1.5, 2);
-                c.aggiungiOpera(q);
+            q = new Quadro("pietro", "fABBRI","Pezzo di cuore", 1.5, 2);
+            c.aggiungiOpera(q);
 
-                s = new Scultura("FRANCO", "aRmaNI","Abaco",15, 20, 12);
-                c.aggiungiOpera(s);
+            s = new Scultura("FRANCO", "aRmaNI","Abaco",15, 20, 12);
+            c.aggiungiOpera(s);
 
-                System.out.println("\nQuadro: " + q.toString());
-                System.out.println("\nScultura: " + s.toString());
+            System.out.println("\nQuadro: " + q.toString());
+            System.out.println("\nScultura: " + s.toString());
 
-                System.out.println("\nColleazione: "+c.toString());
+            System.out.println("\nColleazione: "+c.toString());
 
 
-                System.out.println("\nDati dell'opera cercata: "+c.cercaOpera(s.getTitolo()));
+            s1 = new Scultura("FRANCa", "aRmaNI","Abaco",15, 20, 12);
 
-                ver = true;
-            } catch (Exception e) {
-                System.out.println("Problema!" + e.getMessage());
-                ver = false;
-            }
-        }while(!ver);
+            System.out.println("\nDati dell'opera cercata: "+c.cercaOpera(s1));
+
+            ver = true;
+        } catch (Exception e) {
+            System.out.println("Problema!" + e.getMessage());
+            ver = false;
+        }
     }
 
 }

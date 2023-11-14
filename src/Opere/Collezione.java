@@ -22,25 +22,23 @@ public class Collezione {
             dimLog++;
         }
 
-        public String cercaOpera(String titolo) throws Exception{
+        public String cercaOpera(OperaDArte o){
             boolean ver = false;
-            int salvataggio = 0;
-            for (int i = 0; i < dimLog; i++) {
-                if (Objects.equals(titolo, collezione[i].getTitolo())) {
-                    ver = true;
+            for (int i = 0; i<dimLog; i++){
+                if (collezione[i].equals(o)){
+                    ver = false;
                     return collezione[i].toString();
                 }
             }
             if(!ver){
-                throw new Exception("Errore");
+                return "Non eiste nessun' opera con queste caratteristiche!";
             }
             return "";
-
         }
 
     @Override
     public String toString() {
-        String ritorno = "Collezione: ";
+        String ritorno = "";
         for (int i = 0; i<dimLog; i++){
             ritorno += "\n" + collezione[i].toString();
         }

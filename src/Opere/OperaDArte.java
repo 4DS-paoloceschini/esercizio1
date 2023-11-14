@@ -10,6 +10,7 @@ public abstract class OperaDArte {
     public OperaDArte(String nome, String cognome, String titolo){
         setNome(nome);
         setCognome(cognome);
+        setTitolo(titolo);
 
     }
 
@@ -46,9 +47,9 @@ public abstract class OperaDArte {
 
     @Override
     public String toString() {
-        return "Autore{" +
-                " nome='" + nome + '\'' +
+        return "OperaDArte{" +
+                "nome='" + nome + '\'' +
                 ", cognome='" + cognome + '\'' +
-                '}';
+                ", titolo='" + titolo + "}";
     }
 }

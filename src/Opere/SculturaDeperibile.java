@@ -7,9 +7,16 @@ import static java.lang.Math.pow;
 public class SculturaDeperibile extends Scultura{
     private String materiale;
     private double eta;
+    private Supporto s1;
 
-    public SculturaDeperibile(String nome, String cognome, String titolo, double altezza, double lunghezza, double profondita,Supporto supporto, String materiale, double eta){
-        super(nome, cognome, titolo, altezza, lunghezza, profondita, supporto);
+    public SculturaDeperibile(String nome, String cognome, String titolo, double altezza, double lunghezza, double profondita,Supporto s1, String materiale, double eta) throws Exception {
+        super(nome, cognome, titolo, altezza, lunghezza, profondita);
+        boolean ver = s1.compatibile();{
+            if (!(s1.getLarghezza() >= profondita && s1.getAltezza() >= altezza && s1.getLunghezza() >= lunghezza)){
+                throw new Exception("Supporto non compatibile!");
+            }
+        }
+        this.s1 = s1;
         setMateriale(materiale.toLowerCase());
         setEta(eta);
     }
@@ -42,9 +49,13 @@ public class SculturaDeperibile extends Scultura{
         return consumo;
     }
 
+    public double ingombroSup(){
+        return s1.getAltezza()*s1.getLarghezza()*s1.getLunghezza();
+    }
+
     @Override
     public String toString() {
-        return super.toString()+" Ingombro dopo "+eta+" anni : "+printingombro()*consumo()+" m3"+ '\'' +
+        return super.toString()+" Ingombro dopo "+eta+" anni : "+(printingombro()+ingombroSup())*consumo()+" m3"+ '\'' +
                 '}';
     }
 }

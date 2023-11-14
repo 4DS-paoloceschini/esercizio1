@@ -14,7 +14,7 @@ public class Main{
 
         boolean ver = true;
         try {
-            Supporto sup = new Supporto(0.5, 2,3) {
+            Supporto sup = new Supporto(1, 1,1) {
             @Override
             public boolean compatibile() {
                 return false;
@@ -24,11 +24,11 @@ public class Main{
             q = new Quadro("pietro", "fABBRI","Pezzo di cuore", 1.5, 2);
             c.aggiungiOpera(q);
 
-            s = new SculturaDeperibile("FRANCO", "aRmaNI","Abaco",1, 1, 1, sup,  "sabbia", 0.1);
+            s = new SculturaDeperibile("FRANCO", "aRmaNI","Abaco",1, 1, 1, sup,  "marmo", 10);
             c.aggiungiOpera(s);
 
             System.out.println("\nQuadro: " + q.toString());
-            System.out.println("\nScultura: " + s.toString());
+            System.out.println("Scultura: " + s.toString());
 
             System.out.println("\nColleazione: "+c.toString());
 

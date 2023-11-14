@@ -7,7 +7,12 @@ public class ElencoPoligoni {
         poligoni = new PoligoniRegolari[nPoligoni];
     }
     public void aggiungiPoligono(PoligoniRegolari p) {
-        poligoni[dimLog] = p;   //non si può fare perchè la classe è astratta
+        poligoni[dimLog] = new PoligoniRegolari(p) {
+            @Override
+            public double calcolaArea() {
+                return 0;
+            }
+        };
         dimLog++;
     }
     public double calcolaAreaMedia() {

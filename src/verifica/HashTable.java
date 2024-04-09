@@ -1,4 +1,4 @@
-package ceschini;
+package verifica;
 
 public interface HashTable<T> {
 

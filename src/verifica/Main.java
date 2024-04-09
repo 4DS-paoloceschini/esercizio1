@@ -1,21 +1,22 @@
+package verifica;
 
 import ceschini.HashTable2;
 
 public class Main {
     public static void main(String[] args) {
-        /*ceschini.PersonaHT p1 = new ceschini.PersonaHT("Jan", "11/11/1111");
-        ceschini.PersonaHT p2 = new ceschini.PersonaHT("Tim", "11/11/1111");
-        ceschini.PersonaHT p3 = new ceschini.PersonaHT("Mia", "11/11/1111");
-        ceschini.PersonaHT p4 = new ceschini.PersonaHT("Sam", "11/11/1111");
-        ceschini.PersonaHT p5 = new ceschini.PersonaHT("Leo", "11/11/1111");
-        ceschini.PersonaHT p6 = new ceschini.PersonaHT("Ted", "11/11/1111");
-        ceschini.PersonaHT p7 = new ceschini.PersonaHT("Bea", "11/11/1111");
-        ceschini.PersonaHT p8 = new ceschini.PersonaHT("Lou", "11/11/1111");
-        ceschini.PersonaHT p9 = new ceschini.PersonaHT("Ada", "11/11/1111");
-        ceschini.PersonaHT p10 = new ceschini.PersonaHT("Max", "11/11/1111");
-        ceschini.PersonaHT p11 = new ceschini.PersonaHT("Zoe", "11/11/1111");
+        /*ceschini.verifica.PersonaHT p1 = new ceschini.verifica.PersonaHT("Jan", "11/11/1111");
+        ceschini.verifica.PersonaHT p2 = new ceschini.verifica.PersonaHT("Tim", "11/11/1111");
+        ceschini.verifica.PersonaHT p3 = new ceschini.verifica.PersonaHT("Mia", "11/11/1111");
+        ceschini.verifica.PersonaHT p4 = new ceschini.verifica.PersonaHT("Sam", "11/11/1111");
+        ceschini.verifica.PersonaHT p5 = new ceschini.verifica.PersonaHT("Leo", "11/11/1111");
+        ceschini.verifica.PersonaHT p6 = new ceschini.verifica.PersonaHT("Ted", "11/11/1111");
+        ceschini.verifica.PersonaHT p7 = new ceschini.verifica.PersonaHT("Bea", "11/11/1111");
+        ceschini.verifica.PersonaHT p8 = new ceschini.verifica.PersonaHT("Lou", "11/11/1111");
+        ceschini.verifica.PersonaHT p9 = new ceschini.verifica.PersonaHT("Ada", "11/11/1111");
+        ceschini.verifica.PersonaHT p10 = new ceschini.verifica.PersonaHT("Max", "11/11/1111");
+        ceschini.verifica.PersonaHT p11 = new ceschini.verifica.PersonaHT("Zoe", "11/11/1111");
 
-        ceschini.HashTable1 h1 = new ceschini.HashTable1();
+        verifica.HashTable1 h1 = new verifica.HashTable1();
         h1.addElement(p1);
         h1.addElement(p2);
         h1.addElement(p3);

@@ -27,14 +27,16 @@ public class HashTable1{
 
     //@Override
     private Integer findPosition(PersonaHT element) {
-        return element.getAscii()%11; //modulo di questo
+        return element.getAscii()%11;
     }
 
     public String toString(){
         String str = "[ ";
-        for (int i = 0; i<11; i++){
+        int i;
+        for (i = 0; i<10; i++){
             str += ELEMENTS[i].getNome() + " " + ELEMENTS[i].getDataDiNascita() + ", ";
         }
+        str+= ELEMENTS[i+1].getNome() + " " + ELEMENTS[i+1].getDataDiNascita();
         str += " ]";
         return str;
     }

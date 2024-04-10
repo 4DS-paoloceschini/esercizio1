@@ -113,7 +113,7 @@ public class Lista {
         //Collections.sort(lista, Comparator.comparing(Persona::getEta));
 
 
-        lista.sort((o1, o2) -> o1.isGreater(o2));
+        //lista.sort((o1, o2) -> o1.isGreater(o2));
 
         lista.forEach((elemento) -> {
             System.out.println(elemento);

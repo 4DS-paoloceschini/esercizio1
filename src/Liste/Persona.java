@@ -2,12 +2,12 @@ package Liste;
 
 import interfacciaConfrontabile.Confrontabile;
 
-public class Persona implements Confrontabile {
+public class Persona<T> implements Confrontabile {
         private String nome;
         private String cognome;
         private int eta;
 
-        public Persona(String nome, String cognome, int eta){
+        public Persona(String nome, String cognome, int eta, T pistolo){
             this.nome = nome;
             this.cognome = cognome;
             this.eta = eta;

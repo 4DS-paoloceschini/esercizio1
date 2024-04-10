@@ -11,10 +11,6 @@ public class Fattura extends DocumentoFiscale {
             super(data, ora, azienda, carrello, numProdotti);
         }
 
-        @Override
-        public String toString() {
 
-        }
     }
 
-}
